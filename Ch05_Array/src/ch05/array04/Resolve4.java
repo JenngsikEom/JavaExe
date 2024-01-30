@@ -6,5 +6,19 @@
 package ch05.array04;
 
 public class Resolve4 {
+	public static void main(String[] args) {
+		int[] numArr = new int[10];
+		
+		
+		for(int i=0;i<numArr.length;i++) {
+			numArr[i] = 3*(i+1);
+		}
+		
+		System.out.println(numArr);
+		
+		for(int i=numArr.length-1;i>=0;i--) {
+			System.out.printf(numArr[i] + " ");
+		}
+	}
 
 }

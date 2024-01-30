@@ -5,8 +5,8 @@ import java.util.Arrays;
 
 public class Resolve2 {
 	public static void main(String[] args) {
-		String[] names = {"가", "나", "다", "라", "마", "바", "사", "아", "자", "차"};
-		System.out.println(Arrays.toString(names));	
-		
-	}
-}
+		String[] names = {"가", "나", "다", "라", "마", "바", "사"};
+		for(int i=names.length-1;i>=0;i--)
+			System.out.print(names[i]);
+		}
+   }

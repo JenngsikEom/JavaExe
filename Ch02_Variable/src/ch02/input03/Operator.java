@@ -27,11 +27,3 @@ public class Operator {
 		sc.close(); 	// 키보드와 연결을 닫는다.
 	}
 }
-
-
-
-
-
-
-
-
