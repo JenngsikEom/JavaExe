@@ -38,6 +38,5 @@ public class Restaurant {
 	}
 	public void keyboardEnd() {
 		sc.close();
-	}
-	
+	}	
 }
