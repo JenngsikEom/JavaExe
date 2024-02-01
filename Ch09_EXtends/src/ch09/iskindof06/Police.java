@@ -1,7 +1,7 @@
-package ch09.isKindof06;
+package ch09.iskindof06;
 
 public class Police extends Gun{
-	
+
 	private int handCuffs;
 	
 	public Police(int bullet, int handCuffs) {
@@ -15,6 +15,6 @@ public class Police extends Gun{
 		}else {
 			System.out.println("Miss...");
 		}
+		
 	}
-
 }

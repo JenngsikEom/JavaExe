@@ -1,4 +1,4 @@
-package ch09.isKindof06;
+package ch09.iskindof06;
 
 public class ForcePolice extends Police {
 	
