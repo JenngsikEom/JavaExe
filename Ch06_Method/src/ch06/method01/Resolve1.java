@@ -12,6 +12,7 @@ public class Resolve1 {
 		else
 			_max=num1;
 		return _max;
+
 	}
 	public static int min(int num0, int num1) {
 		int _min=0;
@@ -25,13 +26,14 @@ public class Resolve1 {
 	} 
 	
 	public static void main(String[] args) {
-		int num0=100, num1=200;
-		int result=max(num0, num1);
+		int num0=1, num1=100;
+		int result= max(num0,num1);
 		System.out.println("큰 값은: " + result);
 		
-		int num2=100, num3=200;
+		int num2=99, num3=200;
 		int result1=min(num2, num3);
-		System.out.println("작은  값은: " + result1);
+		System.out.println("작은 값은:" + result1);
+
 
 	}
     }

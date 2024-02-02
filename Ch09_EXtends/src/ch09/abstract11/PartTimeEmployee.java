@@ -1,4 +1,4 @@
-package ch09.abstract10;
+package ch09.abstract11;
 
 // 일용직 사원
 public class PartTimeEmployee extends Employee{
@@ -26,7 +26,6 @@ public class PartTimeEmployee extends Employee{
 		System.out.println("workDay : " + workDay);
 		System.out.printf("monthPay : %.2f  \n",  getMonthPay());
 	}
-
 }
 
 

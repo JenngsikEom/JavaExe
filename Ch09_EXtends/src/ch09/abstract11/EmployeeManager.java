@@ -1,4 +1,4 @@
-package ch09.abstract10;
+package ch09.abstract11;
 
 import java.util.Scanner;
 
@@ -15,7 +15,10 @@ public class EmployeeManager {
 		System.out.println("2. 임시직");
 		System.out.println("3. 일용직");
 		System.out.println("4. 전체정보보기");
-		System.out.println("5. 종료");
+		System.out.println("5. 정규직 보기");
+		System.out.println("6. 임시직 보기");
+		System.out.println("7. 일용직 보기");
+		System.out.println("8. 종료");
 		System.out.println("번호 입력 >> ");
 		int sel = sc.nextInt();
 		return sel;
@@ -53,7 +56,7 @@ public class EmployeeManager {
 		String name = sc.next();
 		System.out.print("일당 >> ");
 		int dailyPay = sc.nextInt();
-		System.out.print("계약기간 >> ");
+		System.out.print("일한 일수 >> ");
 		int workDay = sc.nextInt();
 		PartTimeEmployee emp = 
 				new PartTimeEmployee(empno, name, dailyPay, workDay);
@@ -69,19 +72,41 @@ public class EmployeeManager {
 		}else {
 			isSave = false;
 		}
-		return true;
+		
+		return isSave;
 	}
 	private void viewAllEmployeeInfo() {
-		for(int i=0;i<this.numOfEmp; i++) {
+		for(int i=0;i<this.numOfEmp;i++) {
 			this.empArr[i].showEmployeeInfo();
 		}
-		
+	}
+	private void viewRegEmployeeInfo() {
+		for(int i=0;i<this.numOfEmp;i++) {
+			Employee emp = this.empArr[i];
+			if(emp instanceof RegularEmployee)
+				this.empArr[i].showEmployeeInfo();
+		}
+	}
+	private void viewTempEmployeeInfo() {
+		for(int i=0;i<this.numOfEmp;i++) {
+			Employee emp = this.empArr[i];
+			if(emp instanceof TempEmployee)
+				this.empArr[i].showEmployeeInfo();
+		}
+	}
+	private void viewPartTimeEmployeeInfo() {
+		for(int i=0;i<this.numOfEmp;i++) {
+			Employee emp = this.empArr[i];
+			if(emp instanceof PartTimeEmployee)
+				this.empArr[i].showEmployeeInfo();
+		}
 	}
 	public void run() {
 		boolean isRun = true;
 		while(isRun) {
 			int selNum = viewMenu();
 			Employee emp = null;
+			
 			switch(selNum) {
 			case EmpMenu.REG_EMP:
 				emp = createRegularEmployee();
@@ -95,6 +120,15 @@ public class EmployeeManager {
 			case EmpMenu.ALL_INFO:
 				emp = null;
 				viewAllEmployeeInfo();
+				break;
+			case EmpMenu.REG_INFO:
+				viewRegEmployeeInfo();
+				break;
+			case EmpMenu.TEMP_INFO:
+				viewTempEmployeeInfo();
+				break;
+			case EmpMenu.PART_INFO:
+				viewPartTimeEmployeeInfo();
 				break;
 			case EmpMenu.EXIT:
 				emp = null;
@@ -116,3 +150,9 @@ public class EmployeeManager {
 		System.out.println("Program Exit...");
 	}
 }
+
+
+
+
+
+
