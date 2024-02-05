@@ -151,7 +151,7 @@ public static void answer3(Scanner sc) {
 // 4번 문제에 대한 풀이
 public static void answer4(Scanner sc) {
 	Song song = new Song();
-	song.setSongInfo("Dancing Queen", "ABBA", "NOW 100 Hits Party",
+	song.setSongInfo("Dancing Queen", "Dancing Queen", "NOW 100 Hits Party",
 			"ABBA", 2024, 10);
 	song.show();
 }
