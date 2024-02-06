@@ -36,17 +36,3 @@ public class WatchTime {
 		wtStr.viewTime();
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
