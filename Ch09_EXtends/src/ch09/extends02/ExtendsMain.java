@@ -10,6 +10,6 @@ public class ExtendsMain {
 		
 		System.out.println("잘생김 점수: " + child.handsomeScore);
 		System.out.println("돈 :" + child.money);
-		System.out.println("돈 :" + child.day);
+		System.out.println("인생 :" + child.day);
 	}
 }
