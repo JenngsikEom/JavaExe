@@ -28,7 +28,3 @@ public class ForcePolice extends Police {
 		gun.shot();
 	}
 }
-
-
-
-

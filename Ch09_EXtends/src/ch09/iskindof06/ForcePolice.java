@@ -11,5 +11,4 @@ public class ForcePolice extends Police {
 	public void fight() {
 		System.out.println("Fight!");
 	}
-
 }

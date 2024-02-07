@@ -16,4 +16,3 @@ public abstract class Calc {
     // 추상 메서드(자식이 상속 받아서 구현해야 함)
 	public abstract int calculate();
 	}
-

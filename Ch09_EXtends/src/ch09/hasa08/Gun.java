@@ -7,11 +7,10 @@ public class Gun {
 		this.bullet = bullet;
 	}
 	public void shot() {
-		if(bullet > 0) {
-		System.out.println("BBANG!");
-		bullet--;
-	}else {
-		System.out.println("Chulkuk...");
-	}
+		if(bullet>0) {
+			System.out.println("빵");
+		}else {
+			System.out.println("철컥...");
+		}
 	}
 }
