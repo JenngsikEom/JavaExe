@@ -18,7 +18,6 @@ public class RegularEmployee extends Employee{
 		double mPay = (double)(yearSalary+bonus)/12;
 		return mPay;
 	}
-
 	@Override
 	public void showEmployeeInfo() {
 		// 부모의 기능 + 추가 확장
@@ -26,10 +25,4 @@ public class RegularEmployee extends Employee{
 		System.out.println("bonus : " + bonus);
 		System.out.printf("monthPay : %.2f  \n",  getMonthPay());
 	}
-
-	
 }
-
-
-
-

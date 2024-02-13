@@ -9,7 +9,7 @@ public class ArrayListExample {
 		
 		
 		//ArrayList 컬렉션 생성
-		List<Board> list = new ArrayList< >();
+		List<Board> list = new ArrayList<>();
 		
 		//객체 추가
 		list.add(new Board("제목1", "내용1", "글쓴이1"));

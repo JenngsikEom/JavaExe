@@ -26,7 +26,7 @@ package ch08.class08;
  * 객체 : 설계도로 만들어진 실체(object, instance)
  * */
 
-public class FruitMian {
+public class FruitMain {
 	public static void main(String[] args) {
 		FruitSeller seller = new FruitSeller(20);
 		FruitBuyer buyer = new FruitBuyer(10000);
