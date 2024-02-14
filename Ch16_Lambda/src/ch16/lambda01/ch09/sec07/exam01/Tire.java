@@ -1,4 +1,4 @@
-package ch16.lambda.ch09sec07.exam01;
+package ch16.lambda01.ch09.sec07.exam01;
 
 public class Tire {
 	public void roll() {

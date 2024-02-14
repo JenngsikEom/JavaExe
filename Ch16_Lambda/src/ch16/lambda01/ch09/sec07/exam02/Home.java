@@ -1,4 +1,4 @@
-package ch16.lambda.ch09sec07.exam02;
+package ch16.lambda01.ch09.sec07.exam02;
 
 public class Home {
 	//필드에 익명 구현 객체 대입

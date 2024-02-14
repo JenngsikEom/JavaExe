@@ -61,17 +61,3 @@ public class ImplementsRunnable {
 		System.out.println("main 스레드 종료");
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
