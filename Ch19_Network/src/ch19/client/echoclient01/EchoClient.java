@@ -9,7 +9,7 @@ import java.io.PrintWriter;
 import java.net.Socket;
 
 /* 클라이언트는 서버와 연결되어야 한다.
- * 1) IP, Port을 소켓객체 설정하고 연결을 한다.
+ * 1) IP, Port를 소켓객체 설정하고 연결을 한다.
  * 2) 연결 후에 서버<->클라이언트 자유롭게 통신한다.
  * 3) 다 마치면 스트림을 종료한다.
  * */
@@ -54,22 +54,3 @@ public class EchoClient {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
