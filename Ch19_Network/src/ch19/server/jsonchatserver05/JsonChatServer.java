@@ -365,4 +365,3 @@ class WorkerThread extends Thread {
 		return result;
 	}
 }
-
