@@ -366,13 +366,3 @@ class WorkerThread extends Thread {
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
